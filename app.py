@@ -19,11 +19,13 @@ def create_app():
     from routes.events import events_bp
     from routes.tickets import tickets_bp
     from routes.categories import categories_bp
+    from routes.admin import admin_bp
 
     app.register_blueprint(auth_bp)
     app.register_blueprint(events_bp)
     app.register_blueprint(tickets_bp)
     app.register_blueprint(categories_bp)
+    app.register_blueprint(admin_bp)
 
     with app.app_context():
         db.create_all()

@@ -30,7 +30,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-That's it. The API runs on http://localhost:5000.
+That's all. The API runs on http://localhost:5000.
 
 ## API overview
 
